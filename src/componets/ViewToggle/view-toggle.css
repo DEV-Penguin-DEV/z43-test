@@ -1,0 +1,15 @@
+.viewToggle__icon svg {
+    width: 36px;
+    height: 36px;
+    display: flex;
+}
+
+.viewToggle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: clamp(20px, 1.2vw, 30px);
+    cursor: pointer;
+    margin-left: auto;
+}

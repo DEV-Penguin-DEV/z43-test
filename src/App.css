@@ -1,0 +1,78 @@
+main{
+  width: 80vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+}
+
+.main-title {
+  margin: 35px 0 45px;
+  text-align: center;
+  font-size: clamp(36px, 2.8vw, 44px);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s
+}
+
+.list .user {
+  flex-direction: row;
+  gap: 20px;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.user__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.list .user__avatar {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 0;
+}
+
+.user__fullname {
+  font-size: clamp(14px, 1.35vw, 20px);
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.user__email {
+  font-size: clamp(12px, 1vw, 16px);
+
+}
+
+
+.default .users {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: 0 auto;
+  gap: 25px 15px;
+  justify-content: space-between;
+}
+
+.list .users {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+  width: max-content;
+}
+
+@media(max-width: 768px) {
+  main{
+    width: 100vw;
+    padding: 0 20px 40px;
+  }
+
+  .default .users {
+    grid-template-columns: repeat(2, auto);
+    justify-content:space-around;
+  }
+}
