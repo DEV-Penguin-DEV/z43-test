@@ -1,8 +1,8 @@
 import './App.css';
-import Users from './componets/Users.js';
-import Pagination from './componets/Pagination/Pagination.js'
+import Users from './components/Users.js';
+import Pagination from './components/Pagination/Pagination.js'
 import { useEffect, useState } from 'react';
-import ViewToggle from './componets/ViewToggle/ViewToggle.js'
+import ViewToggle from './components/ViewToggle/ViewToggle.js'
 
 function App() {
   const [userPages, setUserPages] = useState([]);

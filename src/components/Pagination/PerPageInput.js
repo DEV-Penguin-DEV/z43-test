@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import './per-page-input.css';
 
 function PerPageInput({perPage, setPerPage, setCurrentPage, setUserPages}) {
     const [perPageLocal, setPerPageLocal] = useState(6);
